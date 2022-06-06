@@ -1,0 +1,72 @@
+header{
+    height: 100px;
+    background-color: #2258a3;
+  
+   
+
+
+    @include respond-below(sm){
+        height: 70px;
+
+    }.uk-flex{
+        @include respond-below(sm){
+            height: 50px;
+    
+    }
+
+    .logo{
+        img{
+            @include respond-below(sm){
+                width: 60%;
+            }
+        }
+    }
+    
+}
+.nav-bar{
+    ul{
+        display: flex;
+        @include respond-below(sm){
+            
+         display: none;
+        }
+    
+    li{
+        margin: 0 20px;
+        a{
+            color: white;
+          font-size: 20px;
+          @include respond-below(sm){
+            font-size: 18px;
+        }
+        }
+    }
+}}}
+.nav-bar .fa-bars{
+    display: none;
+    @include respond-below(sm){
+        display: block;
+        color: azure;
+        cursor: pointer;
+        
+    }
+}
+.nav-bar .menu{
+    display: flex;
+    @include respond-below(sm){
+        
+            display: none;
+            position: absolute;
+        left: 0;
+        right: 0;
+        top: 70px;
+        background: #2258a3;
+        padding: 20px 0px;
+       
+        
+        }
+    
+}
+.nav-bar .menu.open{
+    display: block;
+}

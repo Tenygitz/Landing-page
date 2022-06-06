@@ -1,0 +1,39 @@
+.hero{
+    height: 70vh;
+    background: linear-gradient(to bottom,hsl(216, 69%, 37%) 0%,rgba(109,187,217,1) 100%);
+    .hero-text-area{
+        max-width: 700px;
+        @include respond-below(sm){
+            max-width: 400px;
+        }
+        h1{ margin-top:30px;
+            @include respond-below(sm){
+                font-size: 17px;
+                margin-top: 0;
+            }
+        }
+        p{
+            @include respond-below(sm){
+                font-size: 15px;
+                padding-right: 10px;
+            }
+        }
+        *{
+            color: whitesmoke;
+        }
+    }.hero-img-area{
+        img{
+            max-width: 615px;
+            @include respond-below(sm){
+               max-width: 350px;
+               padding-top: 50px;
+                
+            }
+        }
+    }.ab{
+        @include respond-below(sm){
+            display: block;
+        }
+
+    }
+}

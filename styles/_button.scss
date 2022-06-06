@@ -1,0 +1,19 @@
+.primary-btn{
+    color:white;
+    font-size: 20px;
+    background-color: $secondary-color;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    &:hover{
+        color: $primary-color;
+        transition: ease .3s;
+    }
+    @include respond-below(sm){
+        font-size: 18px;
+        padding:5px 10px;
+        border-radius: 3px;
+    }
+    
+
+}
